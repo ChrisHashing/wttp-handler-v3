@@ -1,39 +1,44 @@
 import { ethers } from "ethers";
 
-// TODO: must refactor our code to use the new wttpMethods.ts file
-// ideally we use the actual Request and Response objects and mimic the fetch API as closely as possible
-// import {
-//   resolveEnsName,
-//   getHostAddress,
-//   getNetworkAlias,
-//   getWttpProvider,
-//   loadWttpHost,
-//   loadWttpGateway,
-//   wttpGet,
-//   wttpHead,
-//   WTTP_VERSION
-// } from "./utils/wttpMethods";
+// Export utility functions from wttpMethods
+export {
+  formatEthereumAddress,
+  resolveEnsName,
+  getHostAddress,
+  getNetworkAlias,
+  getWttpProvider,
+  getWttpUrl,
+  loadWttpHost,
+  loadWttpGateway,
+  wttpGet,
+  wttpHead,
+  WTTP_VERSION
+} from "./utils/wttpMethods";
 
-// import {
-//   WttpConfig,
-//   WttpHandlerConfig,
-//   WttpUrl,
-//   WttpProvider,
-//   HEADOptions,
-//   GETOptions
-// } from "./interfaces/WTTPTypes";
+// Export types
+export type {
+  WttpConfig,
+  WttpHandlerConfig,
+  WttpUrl,
+  WttpProvider,
+  HEADOptions,
+  GETOptions,
+  WttpNetworkConfig
+} from "./interfaces/WTTPTypes";
 
-// import {
-//   HEADResponseStruct,
-//   GETResponseStruct,
-//   HeaderInfoStruct,
-//   ResponseLineStruct,
-//   ResourceMetadataStruct,
-//   CacheControlStruct,
-//   RedirectStruct
-// } from "./interfaces/contracts/WTTPGateway";
+// Export contract types
+export type {
+  HEADResponseStruct,
+  GETResponseStruct,
+  HeaderInfoStruct,
+  ResponseLineStruct,
+  ResourceMetadataStruct,
+  CacheControlStruct,
+  RedirectStruct
+} from "./interfaces/contracts/WTTPGatewayV3";
 
-// import wttpConfig from "../wttp.config";
+// Export config
+export { config as wttpConfig } from "./wttp.config";
 
 // /**
 //  * WttpHandler - A class for handling WTTP (Web3 HTTP) protocol requests

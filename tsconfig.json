@@ -121,9 +121,11 @@
     "strict": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    // "allowImportingTsExtensions": true,
-    // "allowJs": true,
-    // "checkJs": true,
-    // "noEmit": true
-  }
+    "declaration": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "sourceMap": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "test"]
 }

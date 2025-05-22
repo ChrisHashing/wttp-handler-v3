@@ -15,7 +15,7 @@ import {
     WttpGatewayFactory, 
     Web3SiteFactory,
     config
-} from "../../wttp.config";
+} from "../wttp.config";
 import { ethers } from "ethers";
 
 import { 
